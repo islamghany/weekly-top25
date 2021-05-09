@@ -1,15 +1,12 @@
 import Image from "next/image";
-import { useColorMode } from "@chakra-ui/react";
 import Hero from "../components/hero";
-import { useEffect } from "react";
 export default function Home() {
-  const { colorMode, toggleColorMode } = useColorMode();
-  useEffect(() => {
-    toggleColorMode("light");
-  }, []);
+  const handleSubmit = (data,value)=>{
+    console.log(data,value)
+  }
   return (
     <div>
-      <Hero />
+      <Hero handleSubmit={handleSubmit} />
     </div>
   );
 }
