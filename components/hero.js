@@ -13,21 +13,9 @@ import {useRef,useState} from 'react';
 
 const data = [
   {
-    value: "dev",
+    value: "https://dev.to/api/articles?per_page=25&top=7&tags=",
     label: "Dev.to",
-  },
-  {
-    value: "hr",
-    label: "Hacker Rank",
-  },
-  {
-    value: "lr",
-    label: "Log Rocket",
-  },
-  {
-    value: "dev",
-    label: "Dev.to",
-  },
+  }
 ];
 const Hero = ({handleSubmit}) => {
   const inputRef = useRef(null);
